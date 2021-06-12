@@ -14,7 +14,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 
 # Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_GENERIC_PROPERTIES += \
     ro.cherish.maintainer=RealmeDiary
 
 # Device identifier. This must come after all inclusions.
@@ -25,6 +25,8 @@ PRODUCT_MODEL := Realme 3 Pro
 PRODUCT_MANUFACTURER := Realme
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
+
+CHERISH_BUILD_TYPE := OFFICIAL
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="RMX1851" \
